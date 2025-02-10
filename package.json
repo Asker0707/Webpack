@@ -6,7 +6,8 @@
     "http-server": "^14.1.1",
     "mini-css-extract-plugin": "^2.9.2",
     "webpack": "^5.97.1",
-    "webpack-cli": "^6.0.1"
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.0"
   },
   "name": "webpack",
   "version": "1.0.0",
@@ -113,6 +114,7 @@
     "yocto-queue": "^1.1.1"
   },
   "scripts": {
+    "start": "webpack serve --mode development",
     "build": "webpack --mode production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
